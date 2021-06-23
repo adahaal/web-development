@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,28 +8,55 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body class="backgroundimage">
-     <header>
-     	<h1>Welcome To My Portfolio</h1><br>
-     </header>
-     	<nav>
-     	   <div class="container">
-     		 <ul>
-     	        <li class="active"><a href="index.html">Home</a></li>
-     	    	<li><a href="portfolio.html">Portfolio</a></li>
-     	    	<li><a href="contact.html">Contact</a></li>
-     	    	<li><a href="cv.html">CV</a></li>
-     	    	<li><a href="sitereport.html">Site Report</a></li>
-     	      </ul>
-     	   </div>
-     	</nav>
-     	    <div class="photoborder">
-     		    <div class="left">
-     			<img src="redd.jpg" alt="myphoto">
-     	    </div>
-     	    </div>
-     		      <div class="hey">Namaste</div>
-     	    <div class="iam">I'm Aayush Dahal,<br>
-     	                  Frontend Developer.
-     	    </div>
+	<h1 class="welcomeport">Welcome To My Portfolio</h1><br>
+	<header>
+		<div class="nav">
+			<div class="nav-web">
+				<span><a href="index.html" class="active">Home</a></span>
+				<span><a href="portfolio.html">Portfolio</a></span>
+				<span><a href="contact.html">Contact</a></span>
+				<span><a href="cv.html">CV</a></span>
+				<span><a href="sitereport.html">Site Report</a></span>
+			</div>
+			<div class="nav-mobile" id="nav">
+				<span><a href="index.html" class="active">Home</a></span>
+				<span><a href="portfolio.html">Portfolio</a></span>
+				<span><a href="contact.html">Contact</a></span>
+				<span><a href="cv.html">CV</a></span>
+				<span><a href="sitereport.html">Site Report</a></span>
+			</div>
+			<img onclick="toggle()" src="hehe.png" alt="hamburger">
+		</div>
+	</header>
+	<script>
+	let isToggle = true;
+	function toggle() {
+		console.log(toggle)
+		let nav = document.getElementById('nav')
+		if(isToggle) {
+			nav.className = "nav-mobile show"
+		}
+		else {
+			nav.className = "nav-mobile"
+		}
+		isToggle = !isToggle
+	}
+    </script>
+	<div>
+		<div class="left">
+			<img class="profile" src="redd.jpg" alt="myphoto">
+		</div>
+	</div>
+	<div>
+		<img class="insta" src="socialsite.png" alt="insta">
+	</div>
+	<div class="hey">Namaste</div>
+	<div class="iam">I'm Aayush Dahal,<br>
+		Frontend Developer
+		<p class="btm-text">Find me on:</p>
+	</div>
+	<footer>
+	    <p class="copyright"> Copyright © 2021 Aayush dahal</p>
+	</footer>
 </body>
 </html>
