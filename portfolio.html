@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body class="backgroundimage">
-     <header>
-     	<h1>Welcome To My Portfolio</h1><br>
-     </header>
-     	<nav>
-     		<div class="container"> 
-     		<ul>
-     	        <li><a href="index.html">Home</a></li>
-     	    	<li class="active"><a href="portfolio.html">Portfolio</a></li>
-     	    	<li><a href="contact.html">Contact</a></li>
-     	    	<li><a href="cv.html">CV</a></li>
-     	    	<li><a href="sitereport.html">Site Report</a></li>
-     	    </ul>
-     	    </div>
-     	</nav>
+    <header class="">
+        <h1>Welcome To My Portfolio</h1><br>
+        <div class="nav">
+            <div class="nav-web">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="portfolio.html" class="active">Portfolio</a></span>
+                <span><a href="contact.html">Contact</a></span>
+                <span><a href="cv.html">CV</a></span>
+                <span><a href="sitereport.html">Site Report</a></span>
+            </div>
+            <div class="nav-mobile" id="nav">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="portfolio.html" class="active">Portfolio</a></span>
+                <span><a href="contact.html">Contact</a></span>
+                <span><a href="cv.html">CV</a></span>
+                <span><a href="sitereport.html">Site Report</a></span>
+            </div>
+            <img onclick="toggle()" src="./photoes/hamburg.png" alt="hamburger">
+        </div>
+    </header>
+    <script>
+    let isToggle = true;
+    function toggle() {
+        console.log(toggle)
+        let nav = document.getElementById('nav')
+        if(isToggle) {
+            nav.className = "nav-mobile show"
+        }
+        else {
+            nav.className = "nav-mobile"
+        }
+        isToggle = !isToggle
+    }
+</script>
      <p class="heading"> This Is Just An Place Holder Image which Will Be Updated In Term II. </p>
     <div class="images">
         <div>
-        	<img class="dummy"  src="dummy.jpg" alt="dummypic">
+        	<img class="dummy"  src="./photoes/dummy.jpg" alt="dummypic">
         </div>
         <div>
-        	<img class="dummy" src="dummy.jpg" alt="dummypic">
+        	<img class="dummy" src="./photoes/dummy.jpg" alt="dummypic">
         </div>	
         <div>
-        	<img class="dummy" src="dummy.jpg" alt="dummypic">
+        	<img class="dummy" src="./photoes/dummy.jpg" alt="dummypic">
         </div>	
         <div>
-        	<img class="dummy" src="dummy.jpg" alt="dummypic">
+        	<img class="dummy" src="./photoes/dummy.jpg" alt="dummypic">
         </div>	
         <div>
-        	<img class="dummy" src="dummy.jpg" alt="dummypic">
+        	<img class="dummy" src="./photoes/dummy.jpg" alt="dummypic">
         </div>	
         <div>
-        	<img class="dummy" src="dummy.jpg" alt="dummypic">
+        	<img class="dummy" src="./photoes/dummy.jpg" alt="dummypic">
         </div>
     </div>    
 </body>
 </html>	
-
-
-
-
-
-	
-
