@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body class="backgroundimage">
-     <header>
-     	<h1>Welcome To My Portfolio</h1><br>
-     </header>
-     	<nav>
-     		<div class="container"> 
-     		<ul>
-     	        <li><a href="index.html">Home</a></li>
-     	    	<li><a href="portfolio.html">Portfolio</a></li>
-     	    	<li><a href="contact.html">Contact</a></li>
-     	    	<li class="active"><a href="cv.html">CV</a></li>
-     	    	<li><a href="sitereport.html">Site Report</a></li>
-     	    </ul>
-     	    </div>
-     	</nav>
+    <header class="">
+        <h1>Welcome To My Portfolio</h1><br>
+        <div class="nav">
+            <div class="nav-web">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="contact.html">Contact</a></span>
+                <span><a href="cv.html" class="active">CV</a></span>
+                <span><a href="sitereport.html">Site Report</a></span>
+            </div>
+            <div class="nav-mobile" id="nav">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="contact.html">Contact</a></span>
+                <span><a href="cv.html" class="active">CV</a></span>
+                <span><a href="sitereport.html">Site Report</a></span>
+            </div>
+            <img onclick="toggle()" src="./photoes/hamburg.png" alt="hamburger">
+        </div>
+    </header>
+    <script>
+    let isToggle = true;
+    function toggle() {
+        console.log(toggle)
+        let nav = document.getElementById('nav')
+        if(isToggle) {
+            nav.className = "nav-mobile show"
+        }
+        else {
+            nav.className = "nav-mobile"
+        }
+        isToggle = !isToggle
+    }
+</script>
      <div class="border">
 	<h1 class="name">Aayush Dahal</h1><br>
-		<img class="raja" src="sidee.jpg" alt="myphoto">
+		<img class="raja" src="./photoes/sidee.jpg" alt="myphoto">
 	<div class="wrapper">
 	<p>+977-9862145592</p>
     <p>Email:dahalaayush777@gmail.com</p>
@@ -38,19 +60,16 @@
     <th>Name of the exam</th>
     <th>Board/university</th>
     <th>Year of passing</th>
-    <th>GPA</th>
   </tr>
   <tr>
     <td>SEE</td>
     <td>Nepal  gov</td>
     <td>2018</td>
-    <td>3.55</td>
   </tr>
   <tr>
     <td>+2</td>
     <td>HSEB</td>
     <td>2020</td>
-    <td>3.07</td>
   </tr>
 </table>
 <h2>PERSONAL DETAILS</h2>
