@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body class="backgroundimage">
-     <header>
-     	<h1>Welcome To My Portfolio</h1><br>
-     </header>
-     	<nav>
-     		<div class="container"> 
-     		  <ul>
-     	          <li><a href="index.html">Home</a></li>
-     	          <li><a href="portfolio.html">Portfolio</a></li>
-     	     	<li><a href="contact.html">Contact</a></li>
-     	     	<li><a href="cv.html">CV</a></li>
-     	     	<li class="active"><a href="sitereport.html">Site Report</a></li>
-     	      </ul>
-     	    </div>
-     	</nav> 
+    <header class="">
+        <h1 class="welcomeport">Welcome To My Portfolio</h1><br>
+        <div class="nav">
+            <div class="nav-web">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="contact.html">Contact</a></span>
+                <span><a href="cv.html">CV</a></span>
+                <span><a href="sitereport.html" class="active">Site Report</a></span>
+            </div>
+            <div class="nav-mobile" id="nav">
+                <span><a href="index.html">Home</a></span>
+                <span><a href="portfolio.html">Portfolio</a></span>
+                <span><a href="contact.html">Contact</a></span>
+                <span><a href="cv.html">CV</a></span>
+                <span><a href="sitereport.html" class="active">Site Report</a></span>
+            </div>
+            <img onclick="toggle()" src="./photoes/hamburg.png" alt="hamburger">
+        </div>
+    </header>
+    <script>
+    let isToggle = true;
+    function toggle() {
+        console.log(toggle)
+        let nav = document.getElementById('nav')
+        if(isToggle) {
+            nav.className = "nav-mobile show"
+        }
+        else {
+            nav.className = "nav-mobile"
+        }
+        isToggle = !isToggle
+    }
+</script>
           <div class="report">
                <div class="mainheading">
                     <P cLass="submit">
@@ -30,7 +52,7 @@
                Submitted to:<br>
                Naya Aayam Multi-disciplinary Institute(NAMI)<br>
                <br>
-                <img class="nami" src="nami.jpg" alt="nami"><br>
+                <img class="nami" src="./photoes/nami.jpg" alt="nami"><br>
                <br>
                By<br>
                Aayush Dahal<br>
@@ -40,24 +62,24 @@
                Ankit Thapa<br>
                Module Tutor,NAMI college<br>
                <br>
-               MAY
+               Submitted on:July 4
                <br>
                <br>
                      </P>
               </div>
           <h2 class="Topic">DECLARATION</h2>
           <P class="paragraph">
-               Most humbly and respectfully I want to declare that the work here entitled "PORTFOLIO SITE FOR ASSIGNMENT PURPOSE" Submitted to NAMI College is my orginal work in the form of fulfilment of the requirement for the assignment web development (CSY1018), Term-1.
+               Most humbly and respectfully I want to declare that the assignment Submitted to NAMI College is my orginal work done of web development (CSY1018), Term-1.
           </P>
           <h2 class="Topic">ACKNOWLEDGEMENT</h2>
           <P class="paragraph">
-               A site called "Portfolio Site For Assignment Purpose" has been prepared to demonstrate the ability to make a five-page portfolio site.The portfolio site has been prepared as required by the assignment of web development (CSY1018).I want to express my sincere gratitude for the efforts that our module teacher (Ankit Thapa) took for us and helped to complete this assignment as well.I want to thank all my friends and family who, directly or indirectly, helped me complete my portfolio site.
+                Portfolio site has been prepared to demonstrate the ability to make five-page site.The portfolio site has been prepared as required by the assignment of web development (CSY1018).I want to express my sincere gratitude for the efforts that our module teacher (Ankit Thapa) took for us and helped to complete this assignment as well.I want to thank all my friends and family who, directly or indirectly, helped me complete my portfolio site.
           </P>
           <div content>
                <h2>Table Of Contents</h2>
                <ul>
                     <li>
-                         First Page
+                         Cover page
                     </li>
                     <li>
                          Declaration
@@ -79,6 +101,9 @@
                     </li>
                     <li>
                          Progress images and document
+                    </li>
+                    <li>
+                         Reference
                     </li>
                </ul>
           </div>
@@ -111,7 +136,7 @@
                     <h2 class="Topic">
                           Technical And Design Of Site
                     </h2>
-                    <p>
+                    <p class="paragraph">
                     When I first received this assignment, I was very interested in it. 
                     Developing this portfolio website is my first web development experience. In the beginning, I encountered many difficulties in the design and the selection of colors. I tried using my own layout and design to show skills, but due to unsatisfactory results I worked overtime and changed it. The different changes to the layout, style, and color selection of the web page, is one of my best experiences in learning to make different labels, layouts, and styles. 
                     </p>
@@ -125,16 +150,16 @@
                       </p>
                <div class="progressimage">
                  <div>
-                 <img class="proimage"  src="fi.png" alt="index">
+                 <img class="proimage"  src="./photoes/fi.png" alt="index">
                  </div>
                  <div>
-                 <img class="proimage" src="firstportfolio.png" alt="portfolio">
+                 <img class="proimage" src="./photoes/firstportfolio.png" alt="portfolio">
                  </div> 
                  <div>
-                 <img class="proimage" src="firstcontact.jpg" alt="contact">
+                 <img class="proimage" src="./photoes/firstcontact.jpg" alt="contact">
                  </div> 
                  <div>
-                 <img class="proimage" src="firstcv.png" alt="cv">
+                 <img class="proimage" src="./photoes/firstcv.png" alt="cv">
                  </div> 
               </div> 
               <p class="secondtext">
@@ -142,16 +167,16 @@
               </p>
               <div class="updatedimages">
                 <div>
-                 <img class="proimage"  src="updatedhome.jpg" alt="home">
+                 <img class="proimage"  src="./photoes/finalhomepage.jpg" alt="home">
                  </div>
                  <div>
-                 <img class="proimage" src="updatedportfolio.jpg" alt="portfolio">
+                 <img class="proimage" src="./photoes/finalportfoliopage.jpg" alt="portfolio">
                  </div> 
                  <div>
-                 <img class="proimage" src="updatedcontact.jpg" alt="contact">
+                 <img class="proimage" src="./photoes/finalcontactpage.jpg" alt="contact">
                  </div> 
                  <div>
-                 <img class="proimage" src="updatedcv.jpg" alt="cv">
+                 <img class="proimage" src="./photoes/finalcvpage.jpg" alt="cv">
                  </div>
               </div>
               <p class="Thirdtext">
@@ -159,20 +184,61 @@
               </p>   
               <div class="validation">
                 <div>
-                 <img class="validhome"  src="validhome.jpg" alt="home">
+                  <p>
+                    Index.html
+                  </p>
+                 <img class="validhome"  src="./photoes/finalvalid.png" alt="home">
                  </div>
                  <div>
-                 <img class="validportfolio" src="validportfolio.jpg" alt="portfolio">
+                  <p>
+                    portfolio.html
+                  </p>
+                 <img class="validportfolio" src="./photoes/finalvalidportfolio.png" alt="portfolio">
                  </div> 
                  <div>
-                 <img class="validcontact" src="validcontact.png" alt="contact">
+                  <p>
+                    Contact.html
+                  </p>
+                 <img class="validcontact" src="./photoes/finalvalidcontact.png" alt="contact">
                  </div> 
                  <div>
-                 <img class="validcv" src="validcv.jpg" alt="cv">
+                  <p>
+                    Cv.html
+                  </p>
+                 <img class="validcv" src="./photoes/finalvalidcv.png" alt="cv">
                  </div>
                  <div>
-                 <img class="validreport" src="validreport.jpg" alt="report">
+                  <p>
+                    Sitereport.html
+                  </p>
+                 <img class="validreport" src="./photoes/finalvalidsitereport.png" alt="report">
                  </div>
+              </div>
+              <div>
+                <h2 class="Topic">
+                     REFERENCE
+                </h2>
+                 <p>*Background image available from: https://images.app.goo.gl/ybo2NjAzCZGa2RKA8[Accessed 2021 12/june]</p>
+                 <p>*Contact us site:<br>
+                  youtube [online]. Available 
+                     From: https://youtu.be/gggB0Nq5vBk [Accessed 2021/7/june]</p>
+                  <p>
+                    *Nami image in sitereport available from: https://www.facebook.com/NamiCollege/photos/a.380482775389887/1265215823583240/?__tn__=%3C
+                    [Accessed 2021 10/june]
+                  </p>
+                  <p>
+                    *PlaceHolder image in portfolio available from: https://images.app.goo.gl/BvVFBBPKhmiPkhGv6
+                    [Accessed 2021 7/june]
+                  </p>
+                  <p>
+                    *Instagram image used in home page available from: https://images.app.goo.gl/rS6VrvJbvgrjsGJBA
+                    [Accessed 2021 21/june]
+                  </p>
+                  <p>
+                    *Javascript is used for responsive hamburger available from: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
+                    [Accessed 2021 14/june]
+                  </p>
+
               </div>
           </div>
 </body>
