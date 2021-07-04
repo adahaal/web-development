@@ -1,0 +1,560 @@
+/*css for index.html*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2d2c2c;
+}
+
+.backgroundimage {
+    background-image: url('./photoes/backgroundimage.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    /*Background image available from:https://images.app.goo.gl/ybo2NjAzCZGa2RKA8[Accessed 2021 12/june]*/
+}
+
+header {
+    margin: 1px;
+}
+
+ h1 {
+    text-shadow: 2px 2px black;
+    text-align: center;
+    font-family: "comic sans ms", arial;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: skyblue;
+    transition: 2s;
+}
+
+ul {
+    margin: 5px;
+    padding: 0;
+}
+
+.left img {
+    width: 370px;
+    display: flex;
+    margin-left: 40px;
+    border: solid black;
+    margin-top: 30px;
+    color: skyblue;
+    box-shadow: 2px 2px 2px skyblue;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    font-size: 17px;
+    font-size: 20px;
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hey {
+    color: white;
+    margin-left: 500px;
+    margin-right: 100px;
+    font-size: 30px;
+    margin-top: -350px;
+    margin-bottom: 200px;
+    font-family: "comic sans ms", arial;
+}
+
+.iam {
+    color: skyblue;
+    font-size: 25px;
+    margin-left: 500px;
+    margin-top: -200px;
+    margin-bottom: 100px;
+    font-family: verdana;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .copy {
+    margin-left: 700px;
+    margin-top:-60px;
+    opacity: 50%;
+}
+.btm-text{
+     margin-top: 210px;
+     margin-left: 590px;
+     font-family: verdana;
+     color: silver;
+     opacity: 50%;
+}
+.insta{
+    height: 30px;
+    width: 30px;
+    margin-left: 1240px;
+    border:solid black;
+    border-radius: 10px;
+    opacity: 80%;
+}
+/*css for navigation menu*/
+
+
+.nav {
+    margin-left: 45%;
+    width: 50%;
+}
+
+.nav .nav-web {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav span {
+    font-size: 24px;
+    color: #eee;
+    font-weight: 600;
+}
+
+.nav span a.active {
+    color: #e62c76;
+}
+
+.nav span a:hover {
+    color: #e62c76;
+}
+
+.nav img {
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+.nav img:hover {
+    cursor: pointer;
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.nav-mobile.show {
+    height: 150px;
+}
+
+/*css for contact.html*/
+
+
+h3 {
+    font-size: 30px;
+    margin-left: 20px;
+    color: skyblue;
+    text-decoration: underline;
+}
+
+h4 {
+    color: skyblue;
+    margin-left: 20px;
+}
+
+body p {
+    color: white;
+    margin-left: 20px;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 5px;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #605a5cdb;
+    margin-left: 500px;
+    box-shadow: 4px 4px 4px white;
+    margin-bottom: 400px;
+}
+
+.contactForm .inputbox input,
+.contactForm .inputbox textarea {
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    left: 0;
+    box-shadow: 4px 4px 4px black;
+}
+
+.send {
+    background-color: skyblue;
+    box-shadow: 2px 2px 2px black;
+}
+
+/*css for cv.html*/
+
+
+.raja {
+    width: 200px;
+    border: solid black;
+    margin-left: 640px;
+    border-radius: 10px;
+}
+
+.name {
+    text-align: center;
+    font-size: 30px;
+    color: skyblue;
+    font-family: "comic sans ms", arial;
+    text-decoration: underline;
+    text-shadow: 2px 2px black;
+}
+
+table,
+tr,
+td {
+    border: 1px solid;
+    border-collapse: collapse;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+    margin-left: 20px;
+}
+
+.wrapper {
+    padding: 0px;
+    width: 95%;
+    margin: 20px auto;
+    column-count: 2;
+}
+
+.details {
+    color: white;
+    margin-left: 40px;
+}
+
+h2 {
+    color: skyblue;
+    margin-left: 20px;
+}
+
+.border {
+    border: solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: #2d2c2c;
+    box-shadow: 2px 2px 2px white;
+}
+
+/*css for portfolio.html*/
+.dummy {
+    width: 400px;
+    border: solid black;
+    margin: 10px;
+    color: skyblue;
+    box-shadow: 2px 2px 2px skyblue;
+}
+
+.images {
+    column-count: 3;
+    color: skyblue;
+    box-shadow: 2px 2px 2px skyblue;
+}
+
+.heading {
+    color: white;
+    background-color: red;
+    width: 500px;
+    text-align: center;
+}
+
+/*css for site report*/
+
+
+.Topic {
+    text-align: center;
+}
+
+.mainheading {
+    font-size: 30px;
+    background-color: #41b9f3ed;
+    width: 900px;
+    margin-left: 150px;
+}
+
+.nami {
+    height: 150px;
+    width: 150px;
+    border: solid;
+    color: red;
+    box-shadow: 5px 5px 5px black;
+}
+
+.submit {
+    text-align: center;
+    color: black;
+    box-shadow: 7px 7px 7px black;
+}
+
+.paragraph {
+    text-align: center;
+}
+
+.report {
+    background-color: #2d2c2c;
+    width: 1200px;
+    margin-left: 120px;
+    padding: 30px;
+}
+
+.content,
+ul {
+    color: white;
+}
+
+.proimage {
+    width: 500px;
+    border: solid black;
+    margin: 10px;
+    color: skyblue;
+
+}
+
+.firsttext {
+    font-size: 25px;
+    text-align: center;
+    color: green;
+}
+
+.secondtext {
+    font-size: 25px;
+    text-align: center;
+    color: green;
+}
+
+.Thirdtext {
+    font-size: 25px;
+    text-align: center;
+    color: green;
+}
+
+.progressimage {
+    column-count: 2;
+    padding: 50px;
+}
+
+.updatedimages {
+    column-count: 2;
+    padding: 50px;
+}
+
+.validhome {
+    height: 1200px;
+    width: 1200px;
+}
+
+.validportfolio {
+    height: 1200px;
+    width: 1200px;
+}
+
+.validcontact {
+    height: 1200px;
+    width: 1200px;
+}
+
+.validcv {
+    height: 1400px;
+    width: 1200px;
+}
+
+.validreport {
+    height: 3500px;
+    width: 1200px;
+}
+
+@media screen and (max-width: 550px) {
+    .left img{
+        width: 270px;
+        margin-left: 1px;
+    }
+    .profile {
+        height: 350px;
+        padding: 2px;
+    }
+    .hey{
+        margin-left: 20px;
+        margin-top:-190px;
+
+    }
+    .iam{
+         margin-left: 20px;
+       margin-bottom: 100px;
+    }
+    .backgroundimage{
+        background-repeat: no-repeat;
+        height: 1100px;
+        width: 100vh;
+    }
+    .welcomeport{
+        margin-left: -100px;
+        font-size: 20px;
+    }
+    .btm-text{
+        margin-left: 5px;
+        margin-top: 50px;
+    }
+    .insta{
+        margin-left: 180px;
+        margin-top: 200px;
+    }
+    footer .copy{
+        margin-left: 20px;
+        margin-top: 200px;
+    }
+    .images {
+        column-count: 1;
+        display: block;
+        align-items: center;
+    }
+
+    .contactForm {
+        width: 200px;
+        height: 350px;
+        margin-left: -100px;
+        margin-top: 800px;
+    }
+    .inputbox{
+        padding:1px;
+        margin: 2px;
+    }
+
+    .addresscontact {
+        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .raja {
+        margin-left: 100px;
+    }
+
+    .wrapper {
+        align-items: center;
+        column-count: 1;
+
+    }
+    .border{
+        width: 400px;
+    }
+
+    table,
+    tr,
+    td {
+        align-items: center;
+    }
+
+    .mainheading {
+        align-items: center;
+        margin-left: -30px;
+        width: 390px;
+    }
+    .report{
+        margin-left: 0px;
+        width: 350px;
+    }
+    .progressimage{
+        column-count: 1;
+        margin-left: -80px;
+        width: 300px;
+    }
+    .updatedimages{
+        column-count: 1;
+        margin-left: -80px;
+    }
+    .Topic{
+        margin-left: -10px;
+        align-items: center;
+    }
+    .paragraph{
+        align-items: center;
+        margin-left: -10px;
+    }
+    .validhome{
+        width: 500px;
+        height: 900px;
+        margin-left: -10px;
+    }
+    .validportfolio{
+         width: 500px;
+         margin-left: -10px;
+
+    }
+    .validcontact{
+         width: 500px;
+         margin-left: -10px;
+
+    }
+    .validcv{
+         width: 500px;
+         margin-left: -10px;
+
+    }
+    .validreport{
+         width: 500px;
+         margin-left: -10px;
+
+    }
+    .backgroundimage{
+        width: 400px;
+        align-items: center;
+    }
+    .reportz .smallscreen {
+        display: none;
+
+    }
+}
+
+
+@media(max-width: 500px) {
+    .nav img {
+        display: block;
+    }
+
+    .nav {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .nav .nav-web{
+        display: none;
+    }
+
+    .nav span {
+        padding: 2px 8px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
